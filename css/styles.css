@@ -639,13 +639,13 @@ footer {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-list {
+.button__list {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
 
-.button-list .item + .item {
+.button__list .item + .item {
   margin-left: 8px;
 }
 
@@ -655,7 +655,7 @@ footer {
   background-color: var(--accent-colour);
 }
 
-.works .title {
+.works__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -664,25 +664,25 @@ footer {
   text-align: left;
 }
 
-.works .list {
+.works__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
-.works .item {
+.works__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.works .title {
+.works__title {
   margin-bottom: 4px;
   white-space: nowrap;
 }
 
-.card-item {
+.card__item {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -691,27 +691,23 @@ footer {
   background-color: var(--background-colour);
 }
 
-.card-item .text {
-  color: var(--main-text-colour);
-}
-
-.works-link {
+.works__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-link:hover,
-.works-link:focus {
+.works__link:hover,
+.works__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay {
+.works__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-text {
+.works__discribe {
   position: absolute;
   display: block;
   top: 0;
@@ -725,12 +721,12 @@ footer {
   opacity: 0;
 }
 
-.works .item:hover .overlay-text,
-.works .item:focus .overlay-text {
+.works__item:hover .works__discribe,
+.works__item:focus .works__discribe {
   opacity: 1;
 }
 
-.overlay::before {
+.works__overlay::before {
   position: absolute;
   content: '';
   display: inline-block;
@@ -743,13 +739,13 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay:hover::before,
-.overlay:focus::before {
+.works__overlay:hover::before,
+.works__overlay:focus::before {
   opacity: 1;
 }
 
-.works .item:hover .overlay::before,
-.works .item:focus .overlay::before {
+.works__item:hover .works__overlay::before,
+.works__item:focus .works__overlay::before {
   transform: translatey(0);
 }
 
