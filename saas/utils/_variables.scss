@@ -1,0 +1,18 @@
+:root {
+  --main-text-colour: #757575;
+  --background-colour: #ffffff;
+  --accent-colour: #2196f3;
+  --title-colour: #212121;
+  --ligth-text-colour: #ffffff;
+  --dark-bg-colour: #2f303a;
+  --light-bg-colour: #f5f4fa;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-colour);
+}
