@@ -16,6 +16,11 @@
   align-items: center;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .submit__button::after {
@@ -30,9 +35,4 @@
   height: 24px;
   background-color: transparent;
   background-image: url('../images/icon/iconsend.svg');
-}
-
-.submit__button:hover,
-.submit__button:focus {
-  background-color: #188ce8;
 }
