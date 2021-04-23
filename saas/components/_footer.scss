@@ -1,4 +1,4 @@
-.footer {
+.footer-section {
   background-color: var(--dark-bg-colour);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .footer-block:last-child {
-  flex-basis: calc (50%-15px);
+  flex-basis: calc(50%-15px);
 }
 
 .footer-links__title {
